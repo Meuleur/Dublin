@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GeoDraw</title>
+<style>
+  canvas { border: 1px solid #707070; }
+</style>
+<script>
+
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = 'rgb(255,255,255)';
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(255,255,255)';
+ctx.moveTo(0,0);
+ctx.lineTo(600,0);
+ctx.lineTo(600,600);
+ctx.lineTo(0,600);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(50.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 0",50,70);
+
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(58.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 1",58,70);
+
+}, 100);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(66.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 2",66,70);
+
+}, 200);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(74.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 3",74,70);
+
+}, 300);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(82.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 4",82,70);
+
+}, 400);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(90.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 5",90,70);
+
+}, 500);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(98.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 6",98,70);
+
+}, 600);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(106.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 7",106,70);
+
+}, 700);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(114.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 8",114,70);
+
+}, 800);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(122.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 9",122,70);
+
+}, 900);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(130.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 10",130,70);
+
+}, 1000);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(138.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 11",138,70);
+
+}, 1100);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(146.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 12",146,70);
+
+}, 1200);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(154.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 13",154,70);
+
+}, 1300);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(162.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 14",162,70);
+
+}, 1400);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(170.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 15",170,70);
+
+}, 1500);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(178.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 16",178,70);
+
+}, 1600);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(186.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 17",186,70);
+
+}, 1700);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(194.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 18",194,70);
+
+}, 1800);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(202.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 19",202,70);
+
+}, 1900);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(210.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 20",210,70);
+
+}, 2000);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(218.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 21",218,70);
+
+}, 2100);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(226.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 22",226,70);
+
+}, 2200);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(234.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 23",234,70);
+
+}, 2300);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(242.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 24",242,70);
+
+}, 2400);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(250.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 25",250,70);
+
+}, 2500);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(258.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 26",258,70);
+
+}, 2600);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(266.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 27",266,70);
+
+}, 2700);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(274.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 28",274,70);
+
+}, 2800);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(282.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 29",282,70);
+
+}, 2900);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(290.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 30",290,70);
+
+}, 3000);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(298.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 31",298,70);
+
+}, 3100);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(306.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 32",306,70);
+
+}, 3200);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(314.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 33",314,70);
+
+}, 3300);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(322.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 34",322,70);
+
+}, 3400);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(330.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 35",330,70);
+
+}, 3500);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(338.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 36",338,70);
+
+}, 3600);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(346.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 37",346,70);
+
+}, 3700);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(354.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 38",354,70);
+
+}, 3800);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(362.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 39",362,70);
+
+}, 3900);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(370.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 40",370,70);
+
+}, 4000);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(378.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 41",378,70);
+
+}, 4100);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(386.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 42",386,70);
+
+}, 4200);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(394.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 43",394,70);
+
+}, 4300);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(402.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 44",402,70);
+
+}, 4400);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(410.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 45",410,70);
+
+}, 4500);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(418.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 46",418,70);
+
+}, 4600);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(426.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 47",426,70);
+
+}, 4700);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(434.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 48",434,70);
+
+}, 4800);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(442.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 49",442,70);
+
+}, 4900);
+
+setTimeout(function() {
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 2;
+ctx.arc(450.00,100.00,20,0,2*Math.PI);
+ctx.stroke();
+
+ctx.font = "20px Arial";
+ctx.textAlign = 'left';
+ctx.textBaseline = 'middle';
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.fillText("Frame 50",450,70);
+
+}, 5000);
+
+setTimeout(function() {
+}, 5100);
+
+};
+</script>
+</head>
+<body style="background-color:gray;">
+  <canvas id="myCanvas" width="600" height="600"></canvas>
+<p style="font-family:Arial;font-size:12px;color:LightGray">&nbsp;Produced by GeoDraw-23.10 C/C++ Library, conor.mcardle@dcu.ie, 2023</p></body>
+</html>

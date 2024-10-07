@@ -1,0 +1,3 @@
+/Users/jbcaron/CLionProjects/MiniGolf/cmake-build-debug/CMakeFiles/MiniGolf.dir
+/Users/jbcaron/CLionProjects/MiniGolf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/jbcaron/CLionProjects/MiniGolf/cmake-build-debug/CMakeFiles/rebuild_cache.dir

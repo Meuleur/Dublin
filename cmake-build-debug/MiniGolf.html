@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GeoDraw</title>
+<style>
+  canvas { border: 1px solid #707070; }
+</style>
+<script>
+
+window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = 'rgb(0,204,0)';
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(0,204,0)';
+ctx.moveTo(0,0);
+ctx.lineTo(600,0);
+ctx.lineTo(600,600);
+ctx.lineTo(0,600);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(427,197);
+ctx.lineTo(460,197);
+ctx.lineTo(460,264);
+ctx.lineTo(427,264);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(417,207);
+ctx.lineTo(427,207);
+ctx.lineTo(427,253);
+ctx.lineTo(417,253);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(460,207);
+ctx.lineTo(471,207);
+ctx.lineTo(471,253);
+ctx.lineTo(460,253);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(427.80,207.80,10,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(460.20,207.80,10,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(460.20,253.20,10,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(427.80,253.20,10,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(537,545);
+ctx.lineTo(584,545);
+ctx.lineTo(584,587);
+ctx.lineTo(537,587);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(529,553);
+ctx.lineTo(537,553);
+ctx.lineTo(537,578);
+ctx.lineTo(529,578);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(584,553);
+ctx.lineTo(593,553);
+ctx.lineTo(593,578);
+ctx.lineTo(584,578);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(537.40,553.40,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(584.60,553.40,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(584.60,578.60,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(537.40,578.60,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(124,225);
+ctx.lineTo(149,225);
+ctx.lineTo(149,273);
+ctx.lineTo(124,273);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(116,233);
+ctx.lineTo(124,233);
+ctx.lineTo(124,264);
+ctx.lineTo(116,264);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.moveTo(149,233);
+ctx.lineTo(158,233);
+ctx.lineTo(158,264);
+ctx.lineTo(149,264);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(124.40,233.40,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(149.60,233.40,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(149.60,264.60,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(230,204,102)';
+ctx.arc(124.40,264.60,8,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(0,0,0)';
+ctx.arc(265.00,447.00,10,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle = 'rgb(255,255,255)';
+ctx.arc(100.00,300.00,10,0,2*Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 15;
+ctx.moveTo(0.00,0.00);
+ctx.lineTo(600.00,0.00);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 15;
+ctx.moveTo(600.00,0.00);
+ctx.lineTo(600.00,600.00);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 15;
+ctx.moveTo(600.00,600.00);
+ctx.lineTo(0.00,600.00);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = 'rgb(0,0,0)';
+ctx.lineWidth = 15;
+ctx.moveTo(0.00,600.00);
+ctx.lineTo(0.00,0.00);
+ctx.stroke();
+
+
+};
+</script>
+</head>
+<body style="background-color:gray;">
+  <canvas id="myCanvas" width="600" height="600"></canvas>
+<p style="font-family:Arial;font-size:12px;color:LightGray">&nbsp;Produced by GeoDraw-23.10 C/C++ Library, conor.mcardle@dcu.ie, 2023</p></body>
+</html>
