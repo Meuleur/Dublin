@@ -23,6 +23,16 @@ typedef struct {
     double friction_coefficient;
 } Bunker;
 
+
+typedef struct {
+    Vector2D position;
+    double width;
+    double height;
+    double friction_coefficient;
+
+
+}Rocks;
+
 typedef struct {
     Vector2D position;
     double radius;

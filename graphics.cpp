@@ -14,8 +14,9 @@ void draw_hole(Hole *hole) {
     gd_setFillColor(BLACK);
     gd_circleFilled(hole->position.x, hole->position.y, hole->radius);
 }
+
 void draw_bunkers(Terrain *terrain) {
-    gd_setFillColor(0.9, 0.8, 0.4); // Couleur sable
+    gd_setFillColor(210, 180, 140); // Couleur sable
 
     for (int i = 0; i < terrain->bunker_count; i++) {
         Bunker *bunker = &terrain->bunkers[i];
@@ -59,13 +60,20 @@ void draw_bunkers(Terrain *terrain) {
     }
 }
 
+void draw_rocks(Terrain *terrain){
+
+
+
+
+}
+
 void gd_rectangleFilled(double x1, double y1, double x2, double y2) {
     for (double y = y1; y <= y2; y++) {
         gd_line(x1, y, x2, y);
     }
 }
 void draw_ball(Ball *ball) {
-    gd_setFillColor(WHITE);
+    gd_setFillColor(BLUE);
     std::string js_command = "ctx.beginPath();\n"
                              "ctx.fillStyle = 'rgb(255,255,255)';\n" // WHITE
                              "ctx.arc(" + gd_to_string(ball->position.x) + ", " + gd_to_string(ball->position.y) +

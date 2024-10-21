@@ -24,3 +24,32 @@ void update_ball_position(Ball *ball, double friction, double deltaTime) {
               << ball->velocity.x << ", "
               << ball->velocity.y << ")" << std::endl;
 }
+
+void handle_wall_collision(Ball *ball, Terrain *terrain) {
+    double radius = ball->radius;
+
+    // Collision avec le mur de gauche
+    if (ball->position.x - radius <= 0) {
+        ball->velocity.x = -ball->velocity.x; // Inverser la vitesse en x
+        ball->position.x = radius; // S'assurer que la balle ne dépasse pas le mur
+    }
+
+    // Collision avec le mur de droite
+    if (ball->position.x + radius >= terrain->width) {
+        ball->velocity.x = -ball->velocity.x; // Inverser la vitesse en x
+        ball->position.x = terrain->width - radius; // S'assurer que la balle ne dépasse pas le mur
+    }
+
+    // Collision avec le mur supérieur
+    if (ball->position.y - radius <= 0) {
+        ball->velocity.y = -ball->velocity.y; // Inverser la vitesse en y
+        ball->position.y = radius; // S'assurer que la balle ne dépasse pas le mur
+    }
+
+    // Collision avec le mur inférieur
+    if (ball->position.y + radius >= terrain->height) {
+        ball->velocity.y = -ball->velocity.y; // Inverser la vitesse en y
+        ball->position.y = terrain->height - radius; // S'assurer que la balle ne dépasse pas le mur
+    }
+}
+

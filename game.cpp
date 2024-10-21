@@ -3,16 +3,22 @@
 #include <time.h>
 #include "types.h"
 #include <cmath>
-
-
 #include "GeoDraw.h"
 
-void initialize_bunkers(Terrain *terrain, int bunker_count) {
+void initialize_bunkers(Terrain *terrain) {
+    int bunker_count=3 + rand()%8;
     terrain->bunker_count = bunker_count;
     terrain->bunkers = (Bunker *)malloc(sizeof(Bunker) * bunker_count);
 
+    if (terrain->bunkers == NULL) {
+        std::cerr << "Erreur d'allocation mémoire pour les bunkers." << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
     int min_size = 30; // Taille minimale des bunkers
-    int max_size = 70; // Taille maximale des bunkers
+    int max_size = 200; // Taille maximale des bunkers
+
+    srand(time(NULL)); // Initialiser le générateur aléatoire
 
     for (int i = 0; i < bunker_count; i++) {
         Bunker *bunker = &terrain->bunkers[i];
@@ -22,24 +28,37 @@ void initialize_bunkers(Terrain *terrain, int bunker_count) {
         bunker->height = min_size + rand() % (max_size - min_size + 1);
 
         // Attribuer un coefficient de friction aléatoire entre 0.3 et 0.7
-        bunker->friction_coefficient = 0.3 + ((double)rand() / RAND_MAX) * 0.4;
+        bunker->friction_coefficient = 0.5 ;
 
         double terrain_width = terrain->width;
         double terrain_height = terrain->height;
 
         // Générer des positions aléatoires en s'assurant que le bunker est entièrement sur le terrain
-        bunker->position.x = rand() % (int)(terrain_width - bunker->width);
-        bunker->position.y = rand() % (int)(terrain_height - bunker->height);
+        // Éviter de placer les bunkers trop près du trou ou du point de départ
+        bool position_valide = false;
+        while (!position_valide) {
+            bunker->position.x = rand() % (int)(terrain_width - bunker->width);
+            bunker->position.y = rand() % (int)(terrain_height - bunker->height);
+
+            // Vérifier la distance par rapport au trou et à la balle pour éviter les placements gênants
+            double dx = bunker->position.x - terrain->width / 2;
+            double dy = bunker->position.y - terrain->height / 2;
+            double distance = std::sqrt(dx * dx + dy * dy);
+
+            if (distance > 10.0) { // Ajuster selon besoin
+                position_valide = true;
+            }
+        }
     }
 }
 
 void initialize_hole(Hole *hole, Ball *ball, double terrain_width, double terrain_height) {
-    srand(time(NULL));
+
     hole->radius = 10;
 
     do {
-        hole->position.x = hole->radius + rand() % (int)(terrain_width - 2 * hole->radius);
-        hole->position.y = hole->radius + rand() % (int)(terrain_height - 2 * hole->radius);
+        hole->position.x = hole->radius + rand() % (int)(600 - 2 * hole->radius);
+        hole->position.y = hole->radius + rand() % (int)(600 - 2 * hole->radius);
     } while (fabs(hole->position.x - ball->position.x) < 100 && fabs(hole->position.y - ball->position.y) < 100);
 }
 
@@ -50,8 +69,8 @@ void initialize_game(Ball *ball, Hole *hole, Terrain *terrain) {
     terrain->friction_coefficient = 0.1; // Coefficient de friction de base
 
     // Initialiser la balle
-    ball->position.x = 100;
-    ball->position.y = 300;
+    ball->position.x = ball->radius + rand() % (int)(terrain->width - 2 * ball->radius);
+    ball->position.y = ball->radius + rand() % (int)(terrain->height - 2 * ball->radius);
     ball->velocity.x = 0;
     ball->velocity.y = 0;
     ball->radius = 10;
@@ -60,7 +79,7 @@ void initialize_game(Ball *ball, Hole *hole, Terrain *terrain) {
     initialize_hole(hole, ball, terrain->width, terrain->height);
 
     // Initialiser les bunkers
-    initialize_bunkers(terrain, 3); // Par exemple, 3 bunkers
+    initialize_bunkers(terrain);
 
     // Configurer le canvas
     gd_resetCanvasSize(terrain->width, terrain->height);
